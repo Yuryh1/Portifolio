@@ -1,0 +1,90 @@
+/* Estilo para o body */
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+  }
+  
+  /* Estilo para o header */
+  header {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo para a seção de produtos */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  
+  article {
+    margin: 30px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: calc(33.33% - 60px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  article h2 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+  
+  article p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para o footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    article {
+      flex-basis: calc(50% - 60px);
+    }
+  }
+  
