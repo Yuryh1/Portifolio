@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-	<link rel="stylesheet" href="index.css">
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-m5HBLz5Z/Fv5f1gScdY+RD4f4M4y4x6CO9dIcRg6whK2JZzyU3qkD6wAYI8AhBH2flOvJ3h9XsddBJaD1rWEdw==" crossorigin="anonymous" />
+    <script src="index.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hortifrúti - Legumes e Verduras</title>
-	
+	<title>Hortifrúti</title>
 </head>
+
+
 <body>
+	<div class="content"> 
 	<header>
-		<h1>Bem-vindo(a) à Hortifrúti</h1>
+		<h1>Bem-vindo(a) à Hortifrúti do Marrom</h1>
 		<p>Aqui você encontra as melhores opções de legumes e verduras frescos!</p>
+		
+		<a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
 	</header>
 
 	<section>
@@ -18,57 +28,79 @@
 			<img src="legumes/abobrinha.jpg" alt="Abobrinha">
 			<h2>Abobrinha</h2>
 			<p>R$ 2,50/kg</p>
+			<button id="abobrinha-add">Adicionar ao carrinho</button>
 		</article>
 		<article>
 			<img src="legumes/cebola.jpg" alt="Cebola">
 			<h2>Cebola</h2>
 			<p>R$ 3,00/kg</p>
+			<button id="abobrinha-add">Adicionar ao carrinho</button>
 		</article>
 		<article>
 			<img src="legumes/cenoura.jpg" alt="Cenoura">
 			<h2>Cenoura</h2>
 			<p>R$ 2,80/kg</p>
+			<button id="abobrinha-add">Adicionar ao carrinho</button>
 		</article>
 		<article>
 			<img src="legumes/pimentao.jpg" alt="Pimentão">
 			<h2>Pimentão</h2>
 			<p>R$ 4,00/kg</p>
+			<button id="abobrinha-add">Adicionar ao carrinho</button>
 		</article>
 		<article>
 			<img src="legumes/tomate.jpg" alt="Tomate">
 			<h2>Tomate</h2>
 			<p>R$ 3,50/kg</p>
+			<button id="abobrinha-add">Adicionar ao carrinho</button>
 		</article>
 		<article>
 			<img src="legumes/beterraba.jpg" alt="Beterraba">
 			<h2>Beterraba</h2>
 			<p>R$ 3,20/kg</p>
+			<button id="abobrinha-add">Adicionar ao carrinho</button>
 		</article>
 		<article>
 			<img src="legumes/alface.jpg" alt="Alface">
 			<h2>Alface</h2>
 			<p>R$ 2,00/unidade</p>
+			<button id="abobrinha-add">Adicionar ao carrinho</button>
 		</article>
-		 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Localização</h3>
-        <p>Rua São Paulo, 123 - Centro</p>
-        <p>São Paulo - SP - CEP: 01234-567</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Horário de Funcionamento</h3>
-        <p>Segunda a Sexta: 8h às 20h</p>
-        <p>Sábado: 8h às 18h</p>
-        <p>Domingo: 9h às 13h</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Contato</h3>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>E-mail: contato@hortifruti.com.br</p>
-      </div>
-    </div>
-  </div>
-</footer>
+		<div id="cart">
+			<h3>Carrinho de compras</h3>
+			
+			<ul id="cart-items">
+			  <!-- Itens do carrinho vão aqui -->
+			</ul>
+			<p id="cart-total">Total: R$ 0,00</p>
+			<button id="cart-toggle">Mostrar/ocultar carrinho</button>
+		  </div>
+		  
+		  
+		  
+	</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>Localização</h3>
+						<p>Rua São Paulo, 123 - Centro</p>
+						<p>São Paulo - SP - CEP: 01234-567</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Horário de Funcionamento</h3>
+						<p>Segunda a Sexta: 8h às 20h</p>
+						<p>Sábado: 8h às 18h</p>
+						<p>Domingo: 9h às 13h</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Contato</h3>
+						<p>Telefone: (11) 1234-5678</p>
+						<p>E-mail: contato@hortifruti.com.br</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
 
+</html>
