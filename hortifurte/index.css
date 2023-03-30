@@ -34,15 +34,57 @@ body {
     align-items: center;
     padding: 30px 0;
   }
+  .articles article {
+    width: calc(33.33% - 20px); /* Define a largura de cada item como 1/3 da largura do container com um espaço de 20px entre os itens */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .articles article img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Define a altura máxima da imagem */
+  }
   
+  
+.articles article h2 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.articles article p {
+  margin-bottom: 10px;
+  font-size: 16px; /* Define o tamanho da fonte do preço */
+}
+.articles article button {
+  background-color: #93C572;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Define o tamanho da fonte do botão */
+  transition: background-color 0.3s ease;
+}
+.articles article button:hover {
+  background-color: #6FA557;
+}
   article {
     margin: 30px;
     padding: 30px;
-    background-color: #fff;
+    background-color: #93C572;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex-basis: calc(33.33% - 60px);
     transition: all 0.3s ease-in-out;
+  }
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
   }
   
   article:hover {
@@ -56,10 +98,13 @@ body {
     object-fit: cover;
   }
   
+  
   article h2 {
     font-size: 1.8rem;
     margin: 20px 0;
   }
+
+  
   
   article p {
     font-size: 1.2rem;
@@ -135,3 +180,5 @@ body {
   h3 {
     color: white;
   }
+  
+ 
