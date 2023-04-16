@@ -1,0 +1,348 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #86A697, #ccd4d1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+ /* Alinhar os elementos horizontalmente */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #478340;
+}
+ 
+
+/* Alinhar o título à direita */
+.h2 {
+  margin-left: auto;
+}
+
+/* Estilizar o menu de navegação */
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+}
+ 
+.search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: darkgreen;
+}
+
+ 
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+   
+  header {
+    background-color: #478340;
+    color: white;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  
+  header img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+/* Estilo dos produtos */
+#produtos {
+    margin: 20px 0;
+}
+#produtos img {
+    max-width: 100%;
+ }
+ @media screen and (max-width: 768px) {
+    #produtos img {
+       max-width: 50%;
+    }
+ } 
+
+#produtos h2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+   
+}
+#produtos h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+#produtos ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#produtos li {
+    margin: 20px;
+    text-align: center; /* definindo a largura para 3 produtos por linha */
+}
+
+#produtos li:hover {
+    transform: scale(1.05);
+}
+
+#produtos li img {
+    width: 100%;
+}
+
+#produtos li h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#produtos li p {
+    font-size: 16px;
+    margin: 10px;
+    text-align: right;
+}
+
+#produtos li button {
+    background-color: #83c72f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#produtos li button:hover {
+    background-color: #5B905B;
+}
+
+ 
+ 
+  #promocoes ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  
+  #promocoes li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  #cls:hover{
+    background-color: greenyellow;
+  }
+  
+  #promocoes li img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #promocoes li h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  #promocoes li p {
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  #promocoes li button {
+  background-color: #52c41a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+  
+  #promocoes li button:hover {
+    background-color: #3e8e41;
+  }
+  
+ 
+ 
+  #promocoes li:hover {
+    transform: scale(1.05);
+}
+ 
+#produtos li img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .container1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container1 li {
+    width: 300px;
+    margin: 10px;
+  }
+  
+
+ li{
+        background-color: #86A697;
+        padding: 5px
+ } #cores:hover{
+    background-color: rgb(29, 158, 29);
+  }
+ h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+ }
+
+/* Estilo para o footer */
+footer {
+  background-color: #86A697;
+  color: black;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer i {
+  margin-right: 5px;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  footer li {
+    display: block;
+    margin: 10px 0;
+  }
+}

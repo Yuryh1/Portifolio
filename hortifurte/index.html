@@ -1,104 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-m5HBLz5Z/Fv5f1gScdY+RD4f4M4y4x6CO9dIcRg6whK2JZzyU3qkD6wAYI8AhBH2flOvJ3h9XsddBJaD1rWEdw==" crossorigin="anonymous" />
-    <script src="index.js"></script>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hortifrúti</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-m5HBLz5Z/Fv5f1gScdY+RD4f4M4y4x6CO9dIcRg6whK2JZzyU3qkD6wAYI8AhBH2flOvJ3h9XsddBJaD1rWEdw=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+gNpXnXdESRZ7N6ulhD6Z3qLxMS4A4ncXMdELN/xbn3qX9oEm5J5Y5+5pd1DbGp0bJOkRwLtgPzy0zFk7JX9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hortifrúti</title>
 </head>
 
-
 <body>
-	<div class="content"> 
-	<header>
-		<h1>Bem-vindo(a) à Hortifrúti do Marrom</h1>
-		<p>Aqui você encontra as melhores opções de legumes e verduras frescos!</p>
-		
-		<a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
-	</header>
+    <!DOCTYPE html>
+    <html>
 
-	<section class="articles">
-		<article>
-			<img src="./img/Meu projeto.jpg" alt="Abobrinha">
-			<h2>Abobrinha</h2>
-			<p>R$ 2,50/kg</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		<article>
-			<img src="./img/cebola.jpg" alt="Cebola">
-			<h2>Cebola</h2>
-			<p>R$ 3,00/kg</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		<article>
-			<img src="./img/cenoura.jpg" alt="Cenoura">
-			<h2>Cenoura</h2>
-			<p>R$ 2,80/kg</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		<article>
-			<img src="./img/pimentao.jpg" alt="Pimentão">
-			<h2>Pimentão</h2>
-			<p>R$ 4,00/kg</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		<article>
-			<img src="./img/tomate.jpg" alt="Tomate">
-			<h2>Tomate</h2>
-			<p>R$ 3,50/kg</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		<article>
-			<img src="./img/beterraba.jpg" alt="Beterraba">
-			<h2>Beterraba</h2>
-			<p>R$ 3,20/kg</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		<article>
-			<img src="./img/alface.jpg" alt="Alface">
-			<h2>Alface</h2>
-			<p>R$ 2,00/unidade</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		<article>
-			<img src="./img/pepino1.jpg" alt="Alface">
-			<h2>pepino</h2>
-			<p>R$ 2,80/unidade</p>
-			<button id="abobrinha-add">Adicionar ao carrinho</button>
-		</article>
-		 
-	</section>
-	
-		  
-	</div>
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h3>Localização</h3>
-						<p>Rua São Paulo, 123 - Centro</p>
-						<p>São Paulo - SP - CEP: 01234-567</p>
-					</div>
-					<div class="col-md-4">
-						<h3>Horário de Funcionamento</h3>
-						<p>Segunda a Sexta: 8h às 20h</p>
-						<p>Sábado: 8h às 18h</p>
-						<p>Domingo: 9h às 13h</p>
-					</div>
-					<div class="col-md-4">
-						<h3>Contato</h3>
-						<p>Telefone: (11) 1234-5678</p>
-						<p>E-mail: contato@hortifruti.com.br</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+    <head>
+        <title>Hortifrúti do Marrom</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <nav class="ConteudoP">
+            <div class="cabecalho d-flex justify-content-between">
+       
+              <ul class="navbar d-flex flex-column align-items-center">
+                <li >
+                  <a   href="#projeto">Produtos</a>
+                </li>
+                <li  >
+                  <a href="#sobre">promocões</a>
+                </li>
+                <li  >
+                  <a  href="#Contato">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          
+          
+        <header>
+            
+            <div class="container">
+                <img src="./img/logo1.png" alt="Sacolão do Marrom">
+                <h1>Hortifrúti do Marrom</h1>
+                <p>Bem-vindo ao nosso hortifrúti!</p>
+            </div>
+        </header>
+
+        <form class="search-form" action="">
+            <input class="search-input" type="search" placeholder="Pesquisar produtos...">
+            <button class="search-button" type="submit">Pesquisar</button>
+          </form>
+
+        <section id="produtos">
+            <div class="totalprodutos">
+                <h2>Produtos</h2>
+                <ul class="produtos-container">
+                    <li id="cores">
+                        <img src="/img/pexels-juan-salamanca-61127.png" alt="Produto 1">
+                        <h3>Banana</h3>
+                        <p>R$ 3,50</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/alface.jpg " alt="Produto 1">
+                        <h3>Alface</h3>
+                        <p>R$ 1,50</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/tomate.jpg" alt="Produto 1">
+                        <h3>Beterraba</h3>
+                        <p>R$ 4,50</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/maca (2).jpg" alt="Produto 1">
+                        <h3>Maça</h3>
+                        <p>R$ 2,00</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/pepino (1).jpg" alt="Produto 1">
+                        <h3>Pepino</h3>
+                        <p>R$ 3,00</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/pera.jpg" alt="Produto 2">
+                        <h3>Pera</h3>
+                        <p>R$ 1,00</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/beterraba.jpg" alt="Produto 2">
+                        <h3>Beterraba</h3>
+                        <p>R$ 4,70</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/uva.jpg" alt="Produto 2">
+                        <h3>Uva</h3>
+                        <p>R$ 1,99</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cores">
+                        <img src="./img/limao (1).jpg" alt="Produto 2">
+                        <h3>Limão</h3>
+                        <p>R$ 2,50</p>
+                        <button>Comprar</button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+
+        <section id="promocoes" >
+            <div class="container2">
+                <h2>Promoções</h2>
+                <ul>
+                    <li id="cls">
+                        <img src="./img/pexels-juan-salamanca-61127.png" alt="Promoção 1">
+                        <h3>BANANA PRATA</h3>
+                        <p>R$ 5,00</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cls">
+                        <img src="./img/uva.jpg" alt="Promoção 2">
+                        <h3>UVA</h3>
+                        <p>R$ 7,50</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li id="cls">
+                        <img src="./img/pera.jpg" alt="Promoção 2">
+                        <h3>PERA</h3>
+                        <p>R$ 7,50</p>
+                        <button>Comprar</button>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="contato" id="Contato">
+                    <h3>Entre em contato</h3>
+                    <p>Rua das Flores, 123 - Centro - São Paulo/SP</p>
+                    <p>(11) 1234-5678</p>
+                    <p>contato@hortifruti.com.br</p>
+                </div>
+                <div class="redes-sociais">
+                    <h3>Nos siga nas redes sociais</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=kDS10J8uQD0&ab_channel=CBLOL"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="creditos">
+                <p>&copy; 2023 Hortifrúti do Marrom. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        
+    </body>
+
+    </html>
+
 </body>
 
 </html>
